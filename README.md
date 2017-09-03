@@ -1,0 +1,1 @@
+It's late at night. I was on the phone with my bud, talking about the 1995 sci-comedy cinematic adventure Theodore Rex when I had the idea to sort the entire film, frame by frame, by average brightness. Here goes.
