@@ -1,5 +1,7 @@
 # rex-sort
 
+## First thing - this project absolutely, positively gets an epilepsy warning! The videos this makes are jumbled, flashing messes.
+
 ## Part 0: Setup
 
 It's late at night. I was on the phone with my bud, talking about how he knew someone who worked on the [1995 buddy-cop sci-fi-comedy cinematic adventure Theodore Rex](https://www.youtube.com/watch?v=dY7gsUL9Xkk). It was then, much like JK Rowling's fated train ride, I also had a thought simply pop into my head. A thought that would become my magnum opus. My greatest work. My destiny.
