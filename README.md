@@ -8,7 +8,7 @@ I had the idea to sort the entire film, frame by frame, by average brightness. W
 
 Setting up OpenCV with Python and ffmpeg was the longest and most frustrating part of this project. Installing OpenCV meant updating brew, and updating brew required fixing all of the weird half-installed packages and broken taps left over from years of neglect and a long time of not really understanding package managers when I was in school. Setting it up on Windows was pretty easy,
 
-# Part 1
+## Part 1
 
 My first plan was to forget about the movie's audio, generate an image sequence, and stitch that together with ffmpeg. As much as I'd like to try and use movie-editing libraries, they'd probably be unbearably slow and as a Python beginner OpenCV already has pretty good documentation, an active community, and (arguably most importantly) lots of StackOverflow banter. I can also figure out how to stitch the audio in later.
 
