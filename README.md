@@ -15,3 +15,22 @@ I started tests for this project on my trusty 2012 MacBook Pro, but as soon as I
 Generating the image sequence was pretty quick to program, but not quick to run. OpenCV made reading the frames quick, and Numpy made the summation of the frame's pixels a one-line operation. I chose to embed the brightness level and then the frame number so as to avoid any naming collisions.
 
 I exported the frame image sequence onto an extra hard drive because, uh, I just didn't have 60GB of free SSD space for png files of Whoopi Goldberg. 43:23.042000 minutes later and I was the proud owner of 131925 individual images named after the sum of their pixels and a CSV file detailing the same information.
+
+
+Another 2:22.425000 and the files are all renamed. Then came stitching them together, and with that learning how ffmpeg works. It was pretty easy once I read up on codecs and how it takes arguments. Cool stuff that I'm excited to explore more of. It took a few tries to get a video file of sufficient quality, but after two or three hours of testing I found the
+
+`ffmpeg -i %06d.png -vcodec libx264 -r 25 -b:v 6000k video.avi`
+
+command did what I needed. Now I had a video, but no sound.
+
+# Part 2: Sound
+
+This turned out to be super quick - the [built-in python wav module](https://docs.python.org/2/library/wave.html) does exactly what I needed it to do - read from the CSV file with the frame information, scrub to that frame's location in the audio WAV I had exported (because the torrent I may or may not have downloaded may or may not have had Russian audio as the main audio track), write one frame's worth of audio to an output buffer, and save that at the end. 1:05.582000 minutes later, and it worked like a charm. The actual code is only ~30 lines.
+
+One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, and we have a finished product.
+
+# Part 3
+
+If my math is correct, all this can be done in under an hour if you have ~80GB of space free and a computer with nothing to do.
+
+I don't recommend it.

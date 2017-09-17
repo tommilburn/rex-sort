@@ -14,12 +14,3 @@ with open('frameinfo.csv', 'rb') as csvfile:
         print oldname + " -> " + newname
         counter = counter + 1
         os.rename(framesfolder + oldname, framesfolder + newname)
-
-'''
-for frame in sortedframes:
-    oldpath = outputfolder + str(frame[0]) + " " + str(frame[1]) + '.png'
-    newpath = outputfolder + str(i) + '.png'
-    os.rename(oldpath, newpath)
-    i = i + 1
-'''
-print "renaming finished in " + str(datetime.now() - startTime)
