@@ -1,12 +1,12 @@
-#rex-sort
+# rex-sort
 
-#Part 0
+## Part 0
 
 It's late at night. I was on the phone with my bud, talking about how he knew someone who worked on the 1995 sci-comedy cinematic adventure Theodore Rex. It was then, much like JK Rowling's fated train ride, I also had a thought simply pop into my head. A thought that would become my magnum opus.
 
 I had the idea to sort the entire film, frame by frame, by average brightness. What this project lacks in Quidditch, though, it makes up in animatronic dinosaurs. I may or may not have found a torrent and got to work.
 
-#Part 1
+# Part 1
 
 My first plan was to forget about the movie's audio, generate an image sequence, and stitch that together with ffmpeg. As much as I'd like to try and use movie-editing libraries, they'd probably be unbearably slow and as a Python beginner OpenCV already has pretty good documentation, an active community, and (arguably most importantly) lots of StackOverflow banter. I can also figure out how to stitch the audio in later.
 
@@ -23,13 +23,13 @@ Another 2:22.425000 and the files are all renamed. Then came stitching them toge
 
 command did what I needed. Now I had a video, but no sound.
 
-# Part 2: Sound
+## Part 2: Sound
 
 This turned out to be super quick - the [built-in python wav module](https://docs.python.org/2/library/wave.html) does exactly what I needed it to do - read from the CSV file with the frame information, scrub to that frame's location in the audio WAV I had exported (because the torrent I may or may not have downloaded may or may not have had Russian audio as the main audio track), write one frame's worth of audio to an output buffer, and save that at the end. 1:05.582000 minutes later, and it worked like a charm. The actual code is only ~30 lines.
 
 One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, and we have a finished product.
 
-# Part 3
+## Part 3
 
 If my math is correct, all this can be done in under an hour if you have ~80GB of space free and a computer with nothing to do.
 
