@@ -8,7 +8,7 @@ from datetime import datetime
 print cv2.__version__
 print "hello world"
 startTime = datetime.now()
-outcsv = open("out.csv", "w")
+outcsv = open("frameinfo.csv", "w")
 
 cap = cv2.VideoCapture('rex.avi')
 #cv2.imshow(cap)
@@ -29,9 +29,8 @@ while(cap.isOpened()):
     frames[frameNumber] = sum;
 
 for key, value in sorted(frames.iteritems(), key=lambda (k,v): (v,k)):
-        outcsv.write( "%s, %s\n" % (key, value))
+        outcsv.write( "%s %s\n" % (key, value))
 
 cap.release()
 cv2.destroyAllWindows()
 print "analysis finished in " + str(datetime.now() - startTime)
-
