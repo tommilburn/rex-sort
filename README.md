@@ -34,7 +34,7 @@ One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and vide
 
 ## Part 3
 
-[Here it is!](https://youtu.be/VyY3ZXAaMeQ)
+### [Here it is!](https://youtu.be/VyY3ZXAaMeQ)
 
 Some observations:
 - The first minute or so is okay, but the last two minutes are essential and far and away the best part of the video. Not to spoil it, but it's mostly explosions.
