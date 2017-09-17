@@ -26,7 +26,7 @@ command did what I needed. Now I had a video, but no sound.
 
 This turned out to be super quick - the [built-in python wav module](https://docs.python.org/2/library/wave.html) does exactly what I needed it to do - read from the CSV file with the frame information, scrub to that frame's location in the audio WAV I had exported (because the torrent I may or may not have downloaded may or may not have had Russian audio as the main audio track), write one frame's worth of audio to an output buffer, and save that at the end. 1:05.582000 minutes later, and it worked like a charm. The actual code is only ~30 lines.
 
-One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, and we have a finished product.
+One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, [and we have a finished product](https://youtu.be/VyY3ZXAaMeQ).
 
 ## Part 3
 
