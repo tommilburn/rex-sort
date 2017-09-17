@@ -24,11 +24,13 @@ command did what I needed. Now I had a video, but no sound.
 
 ## Part 2: Sound
 
-This turned out to be super quick - the [built-in python wav module](https://docs.python.org/2/library/wave.html) does exactly what I needed it to do - read from the CSV file with the frame information, scrub to that frame's location in the audio WAV I had exported (because the torrent I may or may not have downloaded may or may not have had Russian audio as the main audio track), write one frame's worth of audio to an output buffer, and save that at the end. 1:05.582000 minutes later, and it worked like a charm. The actual code is only ~30 lines.
+This turned out to be super quick - the [built-in python wav module](https://docs.python.org/2/library/wave.html) does exactly what I needed it to do - read from the CSV file with the frame information, scrub to that frame's location in the seperate audio WAV file I had pulled out of the avi (because the torrent I may or may not have downloaded may or may not have had Russian audio as the primary audio track), and write one frame's worth of audio to an output buffer. 1:05.582000 minutes later, and it worked like a charm. The actual code is only ~30 lines. Curiously, the first few thousand frames run nearly instantaneously, and the last 30% of the movie takes up almost the entire runtime. Will research and report back.
 
-One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, [and we have a finished product](https://youtu.be/VyY3ZXAaMeQ).
+One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and video together, and we're done.
 
 ## Part 3
+
+[Here it is!](https://youtu.be/VyY3ZXAaMeQ)
 
 If my math is correct, all this can be done in under an hour if you have ~80GB of space free and a computer with nothing to do.
 
