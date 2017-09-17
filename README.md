@@ -4,7 +4,7 @@
 
 It's late at night. I was on the phone with my bud, talking about how he knew someone who worked on the [1995 buddy-cop sci-fi-comedy cinematic adventure Theodore Rex](https://www.youtube.com/watch?v=dY7gsUL9Xkk). It was then, much like JK Rowling's fated train ride, I also had a thought simply pop into my head. A thought that would become my magnum opus. My greatest work. My destiny.
 
-I had the idea to sort the entire film, frame by frame, by average brightness. What this project lacks in weasleys, though, it makes up in animatronic dinosaurs. I may or may not have found a torrent and got to work.
+I had the idea to sort the entire film, frame by frame, by average brightness. So like Harry Potter, but with none of the compelling parts of Harry Potter and an animatronic dinosaur. I may or may not have found a torrent and got to work.
 
 Setting up OpenCV with Python and ffmpeg was the longest and most frustrating part of this project. Installing OpenCV meant updating brew, and updating brew required fixing all of the weird half-installed packages and broken taps left over from years of neglect and a long time of not really understanding package managers when I was in school. Setting it up on Windows was pretty easy,
 
