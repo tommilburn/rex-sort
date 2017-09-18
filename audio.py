@@ -6,8 +6,8 @@ from datetime import datetime
 startTime = datetime.now()
 
 
-infile = wave.open('rexaudio.wav', 'rb')
-outfile = wave.open('rexaudio_out.wav', 'wb')
+infile = wave.open('starwars1.wav', 'rb')
+outfile = wave.open('starwars1_out.wav', 'wb')
 outfile.setparams(infile.getparams())
 
 with open('frameinfo.csv', 'rb') as csvfile:

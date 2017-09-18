@@ -20,7 +20,7 @@ Analyzing the frame information and saving each frame individually with that inf
 
 I exported the frame image sequence onto an extra hard drive because, uh, I just didn't have 60GB of free SSD space for png files of Whoopi Goldberg. 43:23.042000 minutes later and I was the proud owner of 131K images and a CSV file for quick reference to all of the generated data.
 
-Another 2:22.425000 and the files are all renamed from 000000 to 131925. Then came stitching them together, and with that learning how ffmpeg works. It took a few minutes of fumbling around with codec settings and getting the output video file to be a high enough quality, but after two or three hours of testing I found the
+Another 2:22.425000 and the files are all renamed from 000000 to 131925. Then came stitching them together, and with that learning how ffmpeg works. It took a few minutes of fumbling around with codec settings and getting the output video file to be a high enough quality, but after some testing I found that:
 
 `ffmpeg -i %06d.png -vcodec libx264 -r 25 -b:v 6000k video.avi`
 
@@ -37,10 +37,15 @@ One more 1:27:57.00-minute long pass through ffmpeg to stitch the audio and vide
 ### [Here it is!](https://youtu.be/VyY3ZXAaMeQ)
 
 Some observations:
-- The first minute or so is okay, but the last two minutes are essential and far and away the best part of the video. Not to spoil it, but it's mostly explosions.
+- The first minute or so is okay, but the [last two minutes](https://youtu.be/VyY3ZXAaMeQ?t=5110) are essential and far and away the best part of the video. Not to spoil it, but it's mostly explosions.
 - It does, gradually, get brighter over the course of the movie!
 - The way scenes cluster and gradually interleave is way more interesting than I thought it would be.
+- I feel so, so terrible for YouTube's compression algorithms
 - The credits and titles, which are white text, permeate almost 70% of the movie. Which is hilarious, but for each frame I should probably average the brightness of each pixel rather than sum them. I'm still so happy with this, though.
 - I do want to try and make versions sorted in order of 'least red' to 'most red', 'least blue' to 'most blue', and 'least green' to 'most green.'
 - If my math is correct, all this can be done in under an hour if you have ~80GB of space free and a computer with nothing to do. As a first serious foray into Python, I'm impressed and compared to what languages I'm used to it feels like programming using a futuristic robotic exoskeleton.
 - I don't recommend doing this.
+
+## Part 4
+
+I'm now integrating this into one script! Stay tuned.
