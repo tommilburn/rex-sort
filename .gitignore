@@ -1,5 +1,7 @@
 *.avi
 *.csv
 *.wav
+*.swp
+*.mp4
 frames
 testframes
